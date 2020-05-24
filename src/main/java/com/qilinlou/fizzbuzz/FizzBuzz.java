@@ -4,12 +4,13 @@ public class FizzBuzz {
     public String reporting(int input) {
         boolean isMod5 = input % 5 == 0;
         boolean isMod3 = input % 3 == 0;
+        boolean isMod7 = input % 7 == 0;
 
-        if (isMod3 && input % 7 == 0)
+        if (isMod3 && isMod7)
             return "FizzWhizz";
         if (isMod3 && isMod5)
             return "FizzBuzz";
-        if (input % 7 == 0) return "Whizz";
+        if (isMod7) return "Whizz";
         if (isMod3) return "Fizz";
         if (isMod5) return "Buzz";
         return String.valueOf(input);
