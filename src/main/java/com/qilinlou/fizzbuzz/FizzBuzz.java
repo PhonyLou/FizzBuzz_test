@@ -6,6 +6,8 @@ public class FizzBuzz {
         boolean isMod3 = input % 3 == 0;
         boolean isMod7 = input % 7 == 0;
 
+        if (isMod5 && isMod7)
+            return "BuzzWhizz";
         if (isMod3 && isMod7)
             return "FizzWhizz";
         if (isMod3 && isMod5)

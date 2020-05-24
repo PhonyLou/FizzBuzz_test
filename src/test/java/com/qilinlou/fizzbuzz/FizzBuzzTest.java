@@ -45,4 +45,11 @@ public class FizzBuzzTest {
         String expect = "FizzWhizz";
         Assert.assertEquals(expect, fizzBuzz.reporting(21));
     }
+
+    @Test
+    void should_return_BuzzWhizz_when_reporting_given_number_is_mod_5_and_7() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String expect = "BuzzWhizz";
+        Assert.assertEquals(expect, fizzBuzz.reporting(35));
+    }
 }
